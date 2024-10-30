@@ -1,0 +1,31 @@
+{
+  "name": "writing-app",
+  "version": "1.0.0",
+  "description": "A good text editor.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "postinstall": "install-app-deps",
+    "pack": "build --dir",
+    "dist": "build",
+    "electron-toolkit": "electron ./node_modules/electron-toolkit"
+  },
+  "build": {
+    "appId": "com.electron.writingapp",
+    "productName": "Writing App",
+    "electronVersion": "4.0.4",
+    "asar": true,
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "author": "1ProCrafters",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^4.2.12",
+    "electron-builder": "^20.38.5"
+  },
+  "dependencies": {
+    "electron-reload": "^1.4.0"
+  }
+}

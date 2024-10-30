@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Writing App</title>
+    <link href="main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="grid">
+      <div class="left">
+        <a id="back" href="index.html"
+          ><img id="icon" src="./media/arrowleft.svg" height="12" width="" />Go
+          Back</a
+        >
+      </div>
+      <div class="mid">
+        Writing App.
+      </div>
+      <div class="right"></div>
+    </div>
+    <div class="wrapperMain">
+      <div class="newgrid">
+        <div class="left panel">
+          <h1>Lightweight.</h1>
+          <img id="icon" src="./media/light.svg" height="150px" width="" />
+          <div class="innerContent">
+            For the people who like a simple, clean interface. No distractions,
+            just write.
+          </div>
+          <button id="lightleft">
+            <a id="green" href="editorlight.html">Use Light Mode</a>
+          </button>
+        </div>
+
+        <div class="right panel">
+          <h1>Dark Mode.</h1>
+          <img id="icon" src="./media/dark.svg" height="150px" width="" />
+          <div class="innerContent">
+            For the people who like it dark. No distractions, just write.
+          </div>
+          <button id="lightleft">
+            <a id="green" href="editordark.html">Use Dark Mode</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      // You can also require other files to run in this process
+      require("./renderer.js");
+    </script>
+  </body>
+</html>
+
